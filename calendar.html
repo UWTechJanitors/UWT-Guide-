@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+    <title>Academic Calendar</title>
+    <style>
+        @font-face {
+            font-family: 'EncodeSansCompressed-900-Black';
+            src: url('fonts/EncodeSansCompressed-900-Black.ttf') format('truetype');
+        }
+
+        @font-face {
+            font-family: 'EncodeSansNormal-400-Regular';
+            src: url('fonts/EncodeSansNormal-400-Regular.ttf') format('truetype');
+        }
+
+        body,
+        html {
+            font-family: 'EncodeSansNormal-400-Regular', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .term-title {
+            background-color: #4b2e83;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            font-weight: bold;
+            font-family: 'EncodeSansCompressed-900-Black', Arial, sans-serif;
+        }
+
+        .calendar-summary,
+        .holidays {
+            margin-bottom: 20px;
+        }
+
+        .subsection-title {
+            background-color: #af913c;
+            color: white;
+            text-align: center;
+            padding: 5px 0;
+            font-weight: bold;
+            font-family: 'EncodeSansCompressed-900-Black', Arial, sans-serif;
+        }
+
+        .table-container {
+            border: 1px solid #af913c;
+            border-radius: 0 0 5px 5px;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 10px;
+            text-align: left;
+            font-family: 'EncodeSansNormal-400-Regular', Arial, sans-serif;
+        }
+
+        td:last-child {
+            text-align: right;
+        }
+
+        th {
+            background-color: #e0e0e0;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <!--Logo and title goes here-->
+        <h1>
+            <img src="images/W.svg" alt="University of Washington Logo"><br>TACOMA GUIDE
+        </h1>
+        <button onclick="history.back()" class="backbtn"><img src="images/icons/home_icon.svg"
+                alt="Home Icon">HOME</button>
+        <h2>Academic Calendar</h2>
+    </header>
+    <div class="container">
+        <h3 class="term-title">Autumn</h3>
+        <div class="calendar-summary">
+            <h4 class="subsection-title">Academic Calendar Summary</h4>
+            <div class="table-container">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Instruction Begins</td>
+                            <td>Sep 25, 2024</td>
+                        </tr>
+                        <tr>
+                            <td>Last Day of Instruction</td>
+                            <td>Dec 6, 2024</td>
+                        </tr>
+                        <tr>
+                            <td>Final Examination Week</td>
+                            <td>Dec 7 – 13, 2024</td>
+                        </tr>
+                        <tr>
+                            <td>Grades Available on MyUW</td>
+                            <td>Dec 18, 2024</td>
+                        </tr>
+                        <tr>
+                            <td>Quarter Break</td>
+                            <td>Dec 14, 2024 – Jan 5, 2025</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="holidays">
+            <h4 class="subsection-title">Holidays</h4>
+            <div class="table-container">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Labor Day</td>
+                            <td>Sep 2, 2024</td>
+                        </tr>
+                        <tr>
+                            <td>Veterans Day</td>
+                            <td>Nov 11, 2024</td>
+                        </tr>
+                        <tr>
+                            <td>Thanksgiving</td>
+                            <td>Nov 28, 2024</td>
+                        </tr>
+                        <tr>
+                            <td>Native American Heritage Day</td>
+                            <td>Nov 29, 2024</td>
+                        </tr>
+                        <tr>
+                            <td>Christmas Day</td>
+                            <td>Dec 25, 2024</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <h3 class="term-title">Winter</h3>
+        <div class="calendar-summary">
+            <h4 class="subsection-title">Academic Calendar Summary</h4>
+            <div class="table-container">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Instruction Begins</td>
+                            <td>Jan 6, 2025</td>
+                        </tr>
+                        <tr>
+                            <td>Last Day of Instruction</td>
+                            <td>Mar 14, 2025</td>
+                        </tr>
+                        <tr>
+                            <td>Final Examination Week</td>
+                            <td>Mar 15 – 21, 2025</td>
+                        </tr>
+                        <tr>
+                            <td>Grades Available on MyUW</td>
+                            <td>Mar 26, 2025</td>
+                        </tr>
+                        <tr>
+                            <td>Quarter Break</td>
+                            <td>Mar 22 – 30, 2025</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="holidays">
+            <h4 class="subsection-title">Holidays</h4>
+            <div class="table-container">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>New Years</td>
+                            <td>Jan 1, 2025</td>
+                        </tr>
+                        <tr>
+                            <td>Martin Luther King Jr. Day</td>
+                            <td>Jan 20, 2025</td>
+                        </tr>
+                        <tr>
+                            <td>Presidents' Day</td>
+                            <td>Feb 17, 2025</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <h3 class="term-title">Spring</h3>
+        <div class="calendar-summary">
+            <h4 class="subsection-title">Academic Calendar Summary</h4>
+            <div class="table-container">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Instruction Begins</td>
+                            <td>Mar 31, 2025</td>
+                        </tr>
+                        <tr>
+                            <td>Last Day of Instruction</td>
+                            <td>Jun 6, 2025</td>
+                        </tr>
+                        <tr>
+                            <td>Final Examination Week</td>
+                            <td>Jun 7 - 13, 2025</td>
+                        </tr>
+                        <tr>
+                            <td>Grades Available on MyUW</td>
+                            <td>Jun 18, 2025</td>
+                        </tr>
+                        <tr>
+                            <td>Quarter Break</td>
+                            <td>Jun 14 - 22, 2025</td>
+                        </tr>
+                        <tr>
+                            <td>Commencement</td>
+                            <td>Jun 13, 2025</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="holidays">
+            <h4 class="subsection-title">Holidays</h4>
+            <div class="table-container">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Memorial Day</td>
+                            <td>May 26, 2025</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <h3 class="term-title">Summer</h3>
+        <div class="calendar-summary">
+            <h4 class="subsection-title">Academic Calendar Summary</h4>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Term</th>
+                            <th>Event</th>
+                            <th>Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="3">Full Term</td>
+                            <td>Instruction Begins</td>
+                            <td>Jun 23, 2025</td>
+                        </tr>
+                        <tr>
+                            <td>Last Day of Instruction</td>
+                            <td>Aug 22, 2025</td>
+                        </tr>
+                        <tr>
+                            <td>Final Examination Week</td>
+                            <td>Typically the last day of class</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3">A-Term</td>
+                            <td>Instruction Begins</td>
+                            <td>Jun 23, 2025</td>
+                        </tr>
+                        <tr>
+                            <td>Last Day of Instruction</td>
+                            <td>Jul 23, 2025</td>
+                        </tr>
+                        <tr>
+                            <td>Final Examination Week</td>
+                            <td>Typically the last day of class</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3">B-Term</td>
+                            <td>Instruction Begins</td>
+                            <td>Jul 24, 2025</td>
+                        </tr>
+                        <tr>
+                            <td>Last Day of Instruction</td>
+                            <td>Aug 22, 2025</td>
+                        </tr>
+                        <tr>
+                            <td>Final Examination Week</td>
+                            <td>Typically the last day of class</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">Grades Available on MyUW</td>
+                            <td>Aug 27, 2025</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="holidays">
+            <h4 class="subsection-title">Holidays</h4>
+            <div class="table-container">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Juneteenth</td>
+                            <td>Jun 19, 2025</td>
+                        </tr>
+                        <tr>
+                            <td>Independence Day</td>
+                            <td>Jul 4, 2025</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
